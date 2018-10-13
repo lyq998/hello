@@ -1,0 +1,390 @@
+
+
+
+
+<html lang="zh-CN">
+<head>
+<title>课程查询结果</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="/css/newcss/project.css" rel="stylesheet" type="text/css">
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow:auto;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<strong><font color="#990000">你选择的课程现代生命科学基础[02]没有课余量</font></strong><br>
+
+
+
+
+
+
+<script language="javascript" >
+function checkSame(form,atom,check){
+        for (i=0;i<form.kcId.length;i++){
+                var aText=form.kcId[i].value;
+                var bText=atom.value;
+                if (aText.substring(0,aText.indexOf("_"))==bText.substring(0,bText.indexOf("_"))){
+                        if (check==true){
+                                form.kcId[i].disabled=true;
+                        }else{
+                                form.kcId[i].disabled=false;
+                        }
+                }
+        }
+        atom.disabled=false;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr><td class="Linetop"></td>
+</tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="title" id="tblHead">
+ <tr>
+  <td>
+   <table border="0" width="100%" cellpadding="0" cellspacing="0" >
+   <tr>
+   <td width="50%" align="left" valign="middle">&nbsp;<b>课程查询结果</b>&nbsp;</td>
+
+<td width="50%" align="right">
+
+</td>
+</tr>
+   </table>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"  >
+ <tr>
+  <td class="Linetop"></td>
+ </tr>
+</table>
+
+<form name="xkActionForm" action="xkAction.do"method="post" target="inforUpContent">
+
+
+
+
+
+
+
+
+
+
+
+<style>
+div{
+clear:both;
+margin:5px 0 0 0;
+font-size:12px;
+line-height:12px;
+}
+a.alt{
+position:relative;
+background-color:onMouseOut=this.className='even'; onMouseOver=this.className='evenfocus';
+float:left;
+width:80px;height:20px;
+margin:0 auto;
+border:0px solid #ccc;
+text-align:center;
+text-decoration:none;
+color:#333333;
+}
+a.alt:hover{background:#FFFBDD; text-decoration:none;z-index:2;}
+a.alt span{display:none;}
+a.alt:hover span{
+position:absolute;
+display:block;
+top:1px;left:75px;
+width:150px;height:50px;
+border:1px solid #ccc;
+z-index:1;
+background-color:#fff;
+}
+</style>
+<script language="javascript">
+function view_kcxx(zxjxjhh,kch,swidth,sheight){
+    var url = '/kcxxAction.do?kch='+kch;
+    if (swidth == undefined) swidth = "800";
+	if (sheight == undefined) sheight = "600";
+	showModalDialog(url, window,"dialogWidth:" + swidth + "px;dialogHeight:" + sheight + "px;help:no;status:no");
+  }
+</script>
+
+
+
+
+
+
+<!-- hnn -->
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="titleTop2">
+					 <tr>
+					  <td class="pageAlign">
+					   <table cellpadding="0" width="100%" class="displayTag" cellspacing="1" border="0" id="user">
+					    <thead>
+							<tr>
+
+
+
+
+
+<th align="center" width="40" class="sortable"><strong>选择</strong></th>
+
+
+<th align="center" width="200" class="sortable">开课系</th>
+
+
+
+<th align="center" width="100" class="sortable">课程号</th>
+
+
+
+<th align="center" width="200" class="sortable">课程名</th>
+
+
+
+<th align="center" width="100" class="sortable">课序号</th>
+
+
+
+<th align="center" width="100" class="sortable">学分</th>
+
+
+
+<th align="center" width="100" class="sortable">考试类型</th>
+
+
+
+<th align="center" width="100" class="sortable">教师</th>
+
+
+
+<th align="center" width="100" class="sortable">课余量</th>
+
+
+
+<th align="center" width="100" class="sortable">选课模式</th>
+
+
+
+<th align="center" width="100" class="sortable">选课控制</th>
+
+
+
+<th align="center" width="100" class="sortable">选课限制说明</th>
+
+
+
+<th align="center" width="100" class="sortable">周次</th>
+
+
+
+<th align="center" width="100" class="sortable">星期</th>
+
+
+
+<th align="center" width="100" class="sortable">节次</th>
+
+
+
+<th align="center" width="100" class="sortable">节数</th>
+
+
+
+<th align="center" width="100" class="sortable">校区</th>
+
+
+
+<th align="center" width="100" class="sortable">教学楼</th>
+
+
+
+<th align="center" width="100" class="sortable">教室</th>
+
+
+
+
+</tr>
+</thead>
+
+
+<tr class="odd" onMouseOut="this.className='even';" onMouseOver="this.className='evenfocus';">
+
+		<td rowspan="1" align="center">&nbsp;
+	
+
+ 
+</td>									
+
+
+		<td rowspan="1" align="center">
+		生命科学学院</td>
+	
+
+		<td rowspan="1" align="center">
+		204138030</td>
+	
+
+		<td rowspan="1" align="center">&nbsp;
+		
+		<a onclick="view_kcxx('2018-2019-1-1','204138030')"; style="cursor:hand;">现代生命科学基础</a>
+		
+		</td>
+		
+	
+
+		<td rowspan="1" align="center">
+		02</td>
+	
+
+		<td rowspan="1" align="center">
+		3.0</td>
+	
+
+		<td rowspan="1" align="center">
+		考查</td>
+	
+
+		<td rowspan="1" align="center">
+		王健美* 邹方东 孙群 岳碧松 郭聪 </td>
+	
+
+		<td rowspan="1" align="center">
+		0</td>
+	
+
+		<td rowspan="1" align="center">
+		直选式</td>
+	
+
+		<td rowspan="1" align="center">
+		可选可退</td>
+	
+
+		<td rowspan="1" align="center">&nbsp;
+		;
+		
+		</td>	
+	
+
+
+
+
+
+<td align="center">&nbsp;2-13周</td>
+
+<td align="center">&nbsp;2</td>
+
+								  <td align="center">&nbsp;10~12</td>
+								 
+<td align="center">&nbsp;3</td>
+
+<td align="center">&nbsp;江安</td>
+
+<td align="center">&nbsp;综合楼C座</td>
+
+<td align="center">&nbsp;C406</td>
+
+</tr>
+
+</table>
+
+<input type="hidden" name="preActionType" value="5"/>
+<input type="hidden" name="actionType" value="9"/>
+</form>
+
+
+
+
+
+<script language="javascript">
+function on_sub(){
+	document.forms[0].submit();
+}
+</script>
+
+
+
+
+
+<form name="xkActionFormA" action="xkAction.do" method="post">
+
+<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="right">
+
+
+<a href="/xkAction.do?actionType=5&pageNumber=-3" style="TEXT-DECORATION:underline"><img id="btnHelp" border="0"
+							         src="/img/icon/return.gif" title="返回查询条件"  style="cursor:hand"/></a>
+
+
+
+
+
+
+
+&nbsp;共1页&nbsp;第1页
+
+
+
+
+
+<!-- 090407hnn -->
+
+
+
+<img src="/img/icon/go.gif" style="cursor:hand" title="跳转到" class="input1" onclick="on_sub()"/><input type="text" size="2" style="border: 1px solid #25658B" name="pageNumber"/>页
+<input type="hidden" name="actionType" value="5"/>
+
+</td>
+</tr>
+</table>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
