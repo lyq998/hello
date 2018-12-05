@@ -31,6 +31,6 @@ print(data['y_est'].shape)
 img_arr = np.transpose(data['y_est'])
 print(img_arr.shape)
 
-save_path = 'D:/aviris_hyperspectral_data/bm4d_10to50.tif'
+save_path = 'D:/aviris_hyperspectral_data/new_bm4d_10to50.tif'
 img = TIFF.open(save_path, 'w')
 img.write_image(img_arr, write_rgb=True)
